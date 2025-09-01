@@ -3,14 +3,14 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="../styles/main.css" />
         <title>ZPS</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <a href="index.html" class="logo">
-                    <img src="images/logo.svg" alt="logo" />
+                    <img src="../images/logo.svg" alt="logo" />
                 </a>
 
                 <nav class="header__nav">
@@ -21,13 +21,23 @@
                     <a href="#" class="header__link">Contacts</a>
                 </nav>
 
-                <div class="burger__menu">
-                    <a href="#">Book Consultation</a>
+                <div class="burger__menu" type="button">
+                    <a class="documentation" href="#">Book Consultation</a>
                     <button>
-                        <img src="images/burger_menu.svg" alt="Burger menu" />
+                        <img
+                            class="burger__menu-icon"
+                            src="../images/burger_menu.svg"
+                            alt="Burger menu"
+                        />
                     </button>
                 </div>
             </div>
         </header>
+
+        <main class="main" id="main">
+            <section class="welcome">
+                
+            </section>
+        </main>
     </body>
 </html>
