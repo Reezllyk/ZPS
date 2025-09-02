@@ -1,25 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root {
+    /* Main color */
+    --color-white: #ffffff;
+    --color-black: #222222;
+    --color-orange: #ea5708;
+
+    /* additional color */
+    --color-light-silver: #d7d7d7;
+    --color-ghost-white: #c6c0c0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
 
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
-    color: #222222;
+    color: var(--color-black);
     font-size: 16px;
     line-height: 0.9;
 
-    border-color: #ffffff;
+    border-color: var(--color-white);
 }
 
 a {
-    color: #222222;
+    color: var(--color-black);
     text-decoration: none;
     transition: ease 0.3s;
 }
 
 a:hover {
-    color: #ea5708;
+    color: var(--color-orange);
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -28,7 +50,9 @@ a:hover {
     margin-right: auto;
     padding: 0 160px;
 }
-
+/* -----------------------
+        HEADER
+----------------------- */
 .header {
     margin: 30px 0;
 }
@@ -56,7 +80,7 @@ a:hover {
 
 .burger__menu a {
     font-size: 24px;
-    color: #ffffff;
+    color: var(--color-white);
     background-color: #222222;
     border-radius: 10px;
     padding: 10px 25px;
@@ -65,7 +89,7 @@ a:hover {
     transition: ease 0.3s;
 }
 .burger__menu a:hover {
-    color: #ea5708;
+    color: var(--color-orange);
 }
 
 .burger__menu button {
@@ -79,42 +103,61 @@ a:hover {
     align-items: end;
 }
 
-.main {
-    display: flex;
-    background-image: url(images/welcome_background.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    position: relative;
-}
+/* -----------------------
+        MAIN SECTION
+----------------------- */
 
 .welcome {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 50px 0;
+    position: relative;
+    background: url(../images/mainBackgtound.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.welcome::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
 .container {
 }
-.welcome__title {
-    font-size: 180px;
-    color: #ffffff;
-    width: 1100px;
-    letter-spacing: 9px;
+
+.welcome__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding-top: 479px;
+    padding-bottom: 60px;
+    align-items: last baseline;
+    justify-content: space-between;
 }
-.welcome__discr {
+.welcome__title {
+    font-size: 184px;
+    width: 1100px;
+    color: var(--color-white);
+}
+.welcome__items-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 77px;
 }
 .welcome__text {
-    font-family: 'Inter', sans-serif;
-    color: #ffffff;
-    font-weight: 500;
     font-size: 28px;
-    letter-spacing: -0.5px;
-    line-height: 1.2;
+    font-weight: 500;
     width: 380px;
+
+    color: var(--color-white);
 }
-.form__button {
+.welcome__button {
+    margin: 0;
+    padding: 0;
+    transition: ease 0.3s;
+}
+
+.welcome__button:hover {
+    scale: 1.05;
 }
