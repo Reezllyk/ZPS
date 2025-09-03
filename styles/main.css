@@ -50,6 +50,51 @@ p {
     margin-right: auto;
     padding: 0 160px;
 }
+
+.descriptor {
+    display: inline-flex;
+    align-items: center;
+    gap: 10.5px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+.descriptor::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+
+    background-image: url(../images/orangeCircle.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main__title {
+    font-size: 100px;
+    width: 1190px;
+    text-indent: 400px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.button {
+    all: unset;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    color: var(--color-white);
+    border: none;
+    background-color: var(--color-orange);
+    cursor: pointer;
+    padding: 15.5px 54px;
+    border-radius: 5px;
+    transition: ease 0.3s;
+}
+
+.button:hover {
+    scale: 1.05;
+}
+
 /* -----------------------
         HEADER
 ----------------------- */
@@ -76,6 +121,7 @@ p {
 .burger__menu {
     display: flex;
     gap: 10px;
+    transition: ease 0.3s;
 }
 
 .burger__menu a {
@@ -86,7 +132,6 @@ p {
     padding: 10px 25px;
     display: flex;
     align-items: center;
-    transition: ease 0.3s;
 }
 .burger__menu a:hover {
     color: var(--color-orange);
@@ -103,8 +148,14 @@ p {
     align-items: end;
 }
 
+.burger__menu .burger__menu-icon:hover {
+    transition: ease 0.3s;
+
+    scale: 1.1;
+}
+
 /* -----------------------
-        MAIN SECTION
+        MAIN SECTION welcome
 ----------------------- */
 
 .welcome {
@@ -113,6 +164,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .welcome::before {
@@ -121,9 +173,6 @@ p {
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
     z-index: 1;
-}
-
-.container {
 }
 
 .welcome__wrapper {
@@ -139,6 +188,7 @@ p {
     font-size: 184px;
     width: 1100px;
     color: var(--color-white);
+    font-weight: 400;
 }
 .welcome__items-wrapper {
     display: flex;
@@ -160,4 +210,73 @@ p {
 
 .welcome__button:hover {
     scale: 1.05;
+}
+
+/* -----------------------
+        MAIN SECTION about us
+----------------------- */
+
+.aboutUs {
+    margin-top: 150px;
+}
+.container {
+}
+.aboutUs__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.aboutUs__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+.aboutUs__img-wrapper {
+    display: flex;
+    gap: 11px;
+}
+
+.aboutUs__image {
+    height: 230px;
+    width: 187px;
+
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+
+.aboutUs__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.aboutUs__text-wrapper p {
+}
+
+.aboutUs__paragraph-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.aboutUs__paragraph-wrapper p {
+    width: 385px;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+}
+
+.aboutUs__text-wrapper .button {
+    margin-top: 45.5px;
+}
+
+.aboutUs3__img {
+    width: 790px;
+    height: 370px;
+    margin-top: 60px;
+
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
 }
