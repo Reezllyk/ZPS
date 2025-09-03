@@ -355,8 +355,6 @@ p {
     z-index: 1;
 }
 
-.container {
-}
 .advantages__wrapper {
     position: relative;
     z-index: 2;
@@ -412,3 +410,8 @@ p {
     color: var(--color-white);
     margin-top: 8px;
 }
+
+
+/* -----------------------
+        MAIN SECTION products
+----------------------- */
