@@ -295,10 +295,6 @@ p {
     justify-content: space-between;
     align-items: flex-start;
 }
-.descriptor {
-}
-.main__title {
-}
 .services__item-wrapper {
     display: flex;
     flex-wrap: wrap;
