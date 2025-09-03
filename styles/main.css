@@ -288,8 +288,7 @@ p {
 .services {
     margin-top: 150px;
 }
-.container {
-}
+
 .services__title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -331,4 +330,85 @@ p {
 .services__link {
     font-size: 32px;
     color: var(--color-orange);
+}
+
+/* -----------------------
+        MAIN SECTION advantages
+----------------------- */
+
+.advantages {
+    position: relative;
+    background: url(../images/advantagesBackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin-top: 160px;
+    padding-bottom: 40px;
+}
+.advantages::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container {
+}
+.advantages__wrapper {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+}
+.advanteges__title {
+    font-size: 100px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+.advanteges__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 350px 20px;
+    margin-top: 30px;
+
+    padding-top: 315px;
+}
+
+.advantages__item-wrapper:nth-child(odd) {
+    margin-top: -315px;
+}
+
+.advantages__item-wrapper {
+    width: 345px;
+    height: 240px;
+    background-color: rgba(198, 192, 192, 0.5);
+    -webkit-backdrop-filter: blur(10px); /* Для Safari */
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+}
+.letter2 {
+    font-size: 160px;
+    font-weight: 400;
+    color: var(--color-white);
+}
+.advantages__item-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: var(--color-white);
+
+    letter-spacing: -0.3px;
+
+    margin: 0;
+}
+.advanteges__text {
+    line-height: 1.2;
+    color: var(--color-white);
+    margin-top: 8px;
 }
