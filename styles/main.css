@@ -446,7 +446,7 @@ p {
 }
 
 .product__item-wrapper {
-    width: 345px;
+    width: 340px;
     background-color: var(--color-orange);
 
     display: flex;
