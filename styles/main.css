@@ -433,10 +433,7 @@ p {
     align-items: flex-start;
 }
 
-.products__text-wrapper {
-}
-.main__title {
-}
+
 .products__text {
     width: 460px;
     margin-left: 405px;
@@ -479,8 +476,7 @@ p {
     color: var(--color-black);
 }
 
-.product__items {
-}
+
 
 .product__items1 {
     display: flex;
