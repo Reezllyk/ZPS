@@ -338,11 +338,11 @@ p {
 
 .advantages {
     position: relative;
-    background: url(../images/advantagesBackground.jpg);
-    background-position: center;
+    /* background: url(../video/IMG_1605.MP4); */
+    /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 
     margin-top: 160px;
     padding-bottom: 40px;
@@ -351,8 +351,16 @@ p {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
+}
+
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .advantages__wrapper {
