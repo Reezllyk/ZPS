@@ -522,7 +522,7 @@ p {
 }
 
 /* -----------------------
-        MAIN SECTION .productionFacilities
+        MAIN SECTION productionFacilities
 ----------------------- */
 
 .productionFacilities {
@@ -603,4 +603,36 @@ p {
 
 .fourthIt {
     padding: 40px 21px 438px 21px;
+}
+
+/* -----------------------
+        MAIN SECTION partners
+----------------------- */
+
+.partners {
+    margin-top: 150px;
+}
+
+.partners__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.partners__company-wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+.partners__company-item {
+    width: 385px;
+    height: 213px;
+    background-color: rgba(220, 220, 220, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
 }
