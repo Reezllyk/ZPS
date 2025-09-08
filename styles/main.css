@@ -638,7 +638,7 @@ p {
 }
 
 /* -----------------------
-        MAIN SECTION partners
+        MAIN SECTION news
 ----------------------- */
 
 .news {
@@ -715,4 +715,168 @@ p {
 .news__wrapper .button:hover {
     color: var(--color-black);
     scale: 1.01;
+}
+
+/* -----------------------
+        MAIN SECTION footer
+----------------------- */
+
+.footer {
+    margin-top: 140px;
+    background-color: var(--color-black);
+}
+
+.footer a {
+    color: var(--color-white);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.container {
+}
+.footer__up-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__left-wrapper {
+    display: flex;
+    gap: 335px;
+    padding-right: 88.5px;
+    border-right: 1px solid var(--color-ghost-white);
+    padding-top: 40px;
+    padding-bottom: 335px;
+}
+.footer__link {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer__link:hover {
+    opacity: 0.5;
+}
+
+.footer__left-items__link {
+    display: flex;
+    gap: 71px;
+    margin-bottom: 24px;
+}
+
+.second__footer {
+    gap: 77px;
+}
+
+.footer__news-link {
+    width: 124px;
+}
+
+.footer__right-wrapper {
+    padding-top: 40px;
+    display: flex;
+    gap: 28px;
+}
+.mail {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.mail:hover {
+    opacity: 0.5;
+}
+
+.footer__number {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.footer__right-wrapper .documentation {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-black);
+    padding: 15px 25px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    height: 20px;
+}
+
+.footer__right-wrapper .documentation:hover {
+    opacity: 0.5;
+}
+
+.footer__down-wrapper {
+    border-top: 1px solid var(--color-ghost-white);
+    padding-bottom: 60px;
+}
+.signature__wrapper {
+    display: flex;
+    gap: 20px 280px;
+    flex-wrap: wrap;
+    margin-top: 74px;
+}
+.signature {
+    color: var(--color-ghost-white);
+    font-size: 16px;
+    font-weight: 400;
+    width: 133px;
+}
+.signature__named {
+    color: var(--color-ghost-white);
+    font-size: 24px;
+    font-weight: 400;
+    width: 160px;
+}
+
+.secondSignature {
+    width: 302px;
+}
+
+.footer__logo-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 68px;
+}
+.footer__logo-img {
+    border: 3px solid var(--color-white);
+    border-radius: 15px;
+    padding: 64px 25px;
+}
+.footer__logo-text {
+    font-size: 300px;
+    color: var(--color-white);
+}
+.form-button {
+    position: relative;
+    width: 331px;
+    height: 229px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.form-button:hover {
+    scale: 1.1;
+}
+
+.form-button img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.form-button h4 {
+    position: absolute;
+
+    font-family: 'Bebas Neue', sans-serif;
+    width: 144px;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0.9;
+    text-align: left;
+
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
 }
