@@ -644,8 +644,7 @@ p {
 .news {
     margin-top: 150px;
 }
-.container {
-}
+
 .news__title-wrapper {
     display: flex;
     justify-content: space-between;
@@ -710,6 +709,7 @@ p {
 .news__wrapper .button {
     margin-top: 32px;
     text-align: center;
+    font-weight: 400;
 }
 
 .news__wrapper .button:hover {
