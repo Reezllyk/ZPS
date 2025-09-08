@@ -636,3 +636,82 @@ p {
     justify-content: center;
     border-radius: 15px;
 }
+
+/* -----------------------
+        MAIN SECTION partners
+----------------------- */
+
+.news {
+    margin-top: 150px;
+}
+.container {
+}
+.news__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.news__item-text__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.news__wrapper {
+    margin-top: 43px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news__item-wrapper:first-child {
+    border-top: 1px solid var(--color-ghost-white);
+}
+
+.news__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-ghost-white);
+}
+
+.news__img {
+    width: 248px;
+    height: 179px;
+
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+.news__item-title {
+    display: flex;
+    gap: 20px;
+}
+
+.news__data {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    width: 77px;
+    text-align: right;
+}
+
+.news__data-title {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    width: 306px;
+}
+.news__item-text {
+    width: 380px;
+}
+.news__wrapper .button {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.news__wrapper .button:hover {
+    color: var(--color-black);
+    scale: 1.01;
+}
