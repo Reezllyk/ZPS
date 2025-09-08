@@ -635,6 +635,11 @@ p {
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    transition: ease 0.3s;
+}
+
+.partners__company-item:hover {
+    scale: 1.03;
 }
 
 /* -----------------------
