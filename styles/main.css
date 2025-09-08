@@ -705,6 +705,7 @@ p {
 }
 .news__item-text {
     width: 380px;
+    line-height: 1.2;
 }
 .news__wrapper .button {
     margin-top: 32px;
