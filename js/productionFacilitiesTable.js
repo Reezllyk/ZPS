@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const elements = document.querySelectorAll('[data-animate]');
+    const items = document.querySelectorAll(
+        '.productionFacilities__table-item'
+    );
 
     const observer = new IntersectionObserver(
         (entries) => {
@@ -11,11 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         },
         {
-            threshold: 0.5, 
+            threshold: 0.4,
         }
     );
 
-    elements.forEach((element) => {
-        observer.observe(element);
+    items.forEach((item) => {
+        observer.observe(item);
     });
 });

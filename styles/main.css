@@ -675,6 +675,10 @@ p {
 
     object-position: center;
     padding: 24px 64px;
+
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .textM {
     font-family: 'Inter', sans-serif;
@@ -695,6 +699,12 @@ p {
 
 .fourthIt {
     padding: 40px 21px 438px 21px;
+}
+
+.productionFacilities__table-item.animate-in
+    .productionFacilities__table__number {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* -----------------------
