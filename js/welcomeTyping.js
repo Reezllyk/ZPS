@@ -1,4 +1,4 @@
-function typeEffect(element, speed = 50) {
+function typeEffect(element, speed = 40) {
     const text = element.getAttribute('data-text');
     element.textContent = '';
     let i = 0;
@@ -24,7 +24,7 @@ const observer = new IntersectionObserver(
         });
     },
     {
-        threshold: 0.5,
+        threshold: 0.1,
     }
 );
 

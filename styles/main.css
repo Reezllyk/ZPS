@@ -80,6 +80,15 @@ p {
     text-indent: 400px;
     margin: 0;
     font-weight: 400;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.main__title.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .button {
@@ -239,6 +248,15 @@ p {
 .aboutUs__img-wrapper {
     display: flex;
     gap: 11px;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.aboutUs__img-wrapper.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .aboutUs__image {
@@ -259,6 +277,14 @@ p {
 .aboutUs__paragraph-wrapper {
     display: flex;
     gap: 20px;
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.aboutUs__paragraph-wrapper.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .aboutUs__paragraph-wrapper p {
@@ -279,6 +305,15 @@ p {
     object-fit: cover;
     object-position: center;
     background-repeat: no-repeat;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.aboutUs3__img.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* -----------------------
@@ -299,7 +334,17 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 40px;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
 }
+
+.services__item-wrapper.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .services__item {
     width: 345px;
     border-left: 1px solid var(--color-ghost-white);
@@ -397,7 +442,17 @@ p {
     backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 15px;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
 }
+
+.advantages__item-wrapper.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .letter2 {
     font-size: 160px;
     font-weight: 400;
@@ -437,12 +492,30 @@ p {
     width: 460px;
     margin-left: 405px;
     margin-top: 16px;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.products__text.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .product__item-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.product__item-container.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .img2 .product__item-img {
@@ -538,10 +611,29 @@ p {
     font-weight: 400;
     width: 812px;
     font-size: 200px;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
 }
+
+.productionFacilities__quotes.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .productionFacilities__text {
     line-height: 1.2;
     width: 370px;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.productionFacilities__text.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .productionFacilities__bottom-wrapper {
@@ -625,7 +717,17 @@ p {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-around;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
 }
+
+.partners__company-wrapper.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .partners__company-item {
     width: 385px;
     height: 213px;
@@ -666,6 +768,15 @@ p {
     margin-top: 43px;
     display: flex;
     flex-direction: column;
+
+    transition: opacity 1s ease, transform 0.5s ease;
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.news__wrapper.animate-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .news__item-wrapper:first-child {
@@ -737,8 +848,6 @@ p {
     font-weight: 400;
 }
 
-.container {
-}
 .footer__up-wrapper {
     margin-top: 40px;
     display: flex;
