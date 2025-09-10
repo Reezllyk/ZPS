@@ -1004,3 +1004,119 @@ p {
     left: 20px;
     margin: 0;
 }
+
+.footer__logo-wrapper-down {
+    display: flex;
+    gap: 100px;
+}
+
+@media (max-width: 1900px) {
+    .container {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 1615px) {
+    .product__item-container.animate-in {
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    .product__item-wrapper {
+        width: 540px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 1500px) {
+    .welcome__title {
+        font-size: 150px;
+        width: 800px;
+    }
+
+    .services__item-wrapper.animate-in {
+        flex-wrap: nowrap;
+    }
+
+    .footer__logo-wrapper {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .form-button {
+        width: 1100px;
+    }
+}
+
+@media (max-width: 1450px) {
+    .partners__company-item {
+        width: 340px;
+        height: 180px;
+    }
+
+    .footer__right-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 15px;
+    }
+
+    .footer__up-wrapper {
+        justify-content: left;
+    }
+
+    .footer__left-items {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1350px) {
+    .main__title.animate-in {
+        text-indent: 0;
+    }
+
+    .aboutUs__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .products__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .partners__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .news__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .advantages__wrapper {
+        flex-direction: column;
+    }
+
+    .products__text {
+        margin-left: 0;
+    }
+
+    .advanteges__items {
+    }
+}
