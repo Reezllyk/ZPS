@@ -131,13 +131,13 @@ p {
     font-weight: 500;
     letter-spacing: -0.3px;
 }
-.burger__menu {
+.burger__menu-wrapper {
     display: flex;
     gap: 10px;
     transition: ease 0.3s;
 }
 
-.burger__menu a {
+.burger__menu-wrapper a {
     font-size: 24px;
     color: var(--color-white);
     background-color: #222222;
@@ -146,11 +146,11 @@ p {
     display: flex;
     align-items: center;
 }
-.burger__menu a:hover {
+.burger__menu-wrapper a:hover {
     color: var(--color-orange);
 }
 
-.burger__menu button {
+.burger__menu-wrapper button {
     background: none;
     border: none;
     padding: 0;
@@ -171,7 +171,6 @@ p {
 }
 
 .burger__menu-icon:hover {
-
     scale: 1.1;
 }
 
@@ -1238,9 +1237,27 @@ p {
 }
 
 @media (max-width: 1150px) {
-    /* .header__nav {
-        opacity: 0;
-    } */
+    .header__nav {
+        display: none;
+    }
+
+    .header.header__mobile .header__nav {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px 30px;
+        justify-content: center;
+    }
+
+    .header.header__mobile .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .burger__menu {
+        display: block;
+    }
 
     .welcome__wrapper {
         flex-direction: column;
@@ -1275,5 +1292,147 @@ p {
 
     .footer__logo-text {
         font-size: 200px;
+    }
+}
+
+@media (max-width: 880px) {
+    .welcome__button img {
+        width: 300px;
+    }
+
+    .advantages__item-wrapper.animate-in {
+        width: 300px;
+        height: 275px;
+    }
+}
+
+@media (max-width: 835px) {
+    .aboutUs3__img.animate-in {
+        width: 350px;
+        height: 163px;
+    }
+
+    .aboutUs__image {
+        height: 170px;
+        width: 170px;
+    }
+
+    .aboutUs__item-wrapper {
+        align-items: flex-start;
+    }
+
+    .aboutUs__paragraph-wrapper {
+        flex-direction: column;
+    }
+
+    .productionFacilities__quotes {
+        font-size: 100px;
+    }
+
+    .productionFacilities__number {
+        font-size: 150px;
+    }
+
+    .productionFacilities__number-text {
+        font-size: 18px;
+    }
+
+    .productionFacilities__table-wrapper {
+        flex-direction: column-reverse;
+        align-self: start;
+        align-items: flex-start;
+    }
+
+    .productionFacilities__table__number.fourthIt {
+        padding: 0;
+    }
+
+    .productionFacilities__table__number.thirdIt {
+        padding: 0;
+    }
+
+    .productionFacilities__table__number.secondIt {
+        padding: 0;
+    }
+
+    .productionFacilities__table__number {
+        padding: 0;
+    }
+
+    .productionFacilities__table-item.firstTable {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 12px;
+        padding: 20px 290px 20px 60px;
+        background-color: var(--color-orange);
+    }
+
+    .firstTable .textM {
+        color: var(--color-white);
+    }
+
+    .productionFacilities__table-item.secondTable {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 12px;
+        padding: 20px 280px 20px 60px;
+        background-color: var(--color-orange);
+    }
+
+    .secondTable .textM {
+        color: var(--color-white);
+    }
+
+    .productionFacilities__table-item.thirdTable {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 12px;
+        padding: 20px 280px 20px 60px;
+        background-color: var(--color-orange);
+    }
+
+    .thirdTable .textM {
+        color: var(--color-white);
+    }
+
+    .productionFacilities__table-item.fourthTable {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 12px;
+        padding: 20px 300px 20px 60px;
+        background-color: var(--color-orange);
+    }
+
+    .fourthTable .textM {
+        color: var(--color-white);
+    }
+
+    .footer__logo-wrapper-down {
+        flex-wrap: wrap;
+    }
+    * {
+        flex-wrap: wrap;
+    }
+
+    .services__item-wrapper.animate-in {
+        flex-wrap: wrap;
+        border-right: none;
+    }
+
+    .services__item {
+        width: 45%; 
+        min-width: 300px; 
+        border-left: none; 
+        padding-left: 10px;
+        margin-bottom: 20px; 
+    }
+    .services__item-wrapper {
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 20px;
     }
 }
